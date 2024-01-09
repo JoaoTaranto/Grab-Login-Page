@@ -1,0 +1,115 @@
+/* IMPROT FONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* VARIÁVEIS - CORES */
+:root {
+  --blue: #4e5bee;
+  --red: #ff5757;
+  --gray: #504f60;
+  --white: #fff;
+}
+
+/* RESET CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  max-width: 1440px;
+  color: var(--white);
+}
+
+/* LOGIN AREA */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-area {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+.logo {
+  width: 177px;
+}
+.login-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-email,
+.input-password {
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  /*   */
+  background-color: var(--blue);
+  border: 2px solid var(--white);
+  padding: 20px;
+  padding-left: 58px;
+}
+
+.input-email:focus,
+.input-password:focus {
+  outline: none;
+}
+
+.login-items button {
+  width: 300px;
+  height: 50px;
+  background-color: var(--white);
+  color: var(--gray);
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.label-email,
+.label-password {
+  position: relative;
+}
+.span-email,
+.span-password {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside img {
+  width: 100%;
+  max-width: 840px;
+}
+
+.footer-text {
+  text-align: center;
+}
+.footer-text span {
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 980px) {
+  aside img {
+    display: none;
+  }
+  .login-area {
+    width: 100vw;
+    height: 100vh;
+  }
+}

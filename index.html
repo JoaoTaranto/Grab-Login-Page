@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grab - Login</title>
   </head>
   <body>
-    
+    <section class="container">
+      <main class="login-area">
+        <!-- CLASS LOGIN AREA -->
+        <img class="logo" src="assets/logo-grab.svg" alt="Logo Grab" />
+        <div class="login-items">
+          <!-- INPUTS -->
+
+          <label class="label-email" for="input-email">
+            <span class="material-symbols-outlined span-email">
+              alternate_email
+            </span>
+            <input class="input-email" type="email" />
+          </label>
+
+          <label class="label-password" for="input-password">
+            <span class="material-symbols-outlined span-password"> lock </span>
+            <input class="input-password" type="password" />
+          </label>
+          <button type="submit" value="Entrar" onclick="Submit()">
+            Entrar
+          </button>
+        </div>
+        <!-- LOGIN-ITEMS -->
+        <div class="footer-text">
+          <p>Problemas para entrar?<br />Clique <span>aqui</span></p>
+        </div>
+      </main>
+
+      <aside class="illustration">
+        <!-- CLASS ILLUSTRATION -->
+        <img src="assets/team.jpg" alt="Team Image Illustration " />
+      </aside>
+    </section>
+    <!-- CLASS CONTET -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>
